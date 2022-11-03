@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+
+    <style>
+
+        body {
+        font-family: "나눔명조";
+        overflow-x: hidden;
+        }
+
+        *{margin:0;padding:0;}
+            #wrap{width:100%;}
+            #margin_wrap{margin:0 auto;width:1800px;}
+            header{width:1800px;height:80px; 
+                position: sticky;
+                top: 0px;
+                background-color: white;
+             }
+
+
+            #logo {text-align: center; margin-top:40px;}
+            .center {text-align: center;
+                        font-weight: bold;}
+            #main_menu {
+                text-align: center;
+                float: center;
+                margin:0 auto;
+                margin-top: 70px;
+                font-family: '나눔명조';
+                font-weight: bold;
+                font-size: 20px;
+                color: black;
+                
+            }
+            section {font-family: '나눔명조';
+                        font-size: 30px;
+                        color: black;
+                   }
+      nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: '나눔명조';
+            font-weight: bold;
+            font-size: 20px;
+            position: sticky;
+            top: 0px;
+ 
+        }
+        nav ul li { 
+            list-style-type: none;
+            display: inline-block;
+            padding-inline: 80px;
+            padding-top: 40px;
+            color: #000;
+            display:inline-block; 
+            margin:0;
+            text-transform:uppercase; 
+        }        
+        nav ul li a { 
+            color: #000;
+            text-decoration: none;
+        }
+        nav ul li:after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #000000;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+        }
+        nav ul li:hover:after { transform: scaleX(1); }
+
+        
+       section img {
+            align-items: center;
+        }
+        
+
+
+        #footer{
+
+            
+            color: white;
+            background-color: black;
+            
+            padding-top: 40px;
+            padding-inline: 80px;
+         
+            height: 130px; width: 1800px;
+            font-size: 13px;
+            text-align: center;
+            
+        }
+
+        #footer a {
+            position: relative;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding-inline: 80px;
+        }
+
+        body {vertical-align: top;}
+
+        #footer-logo
+        { position: relative;
+            text-align: center;
+            margin:0 auto;}
+
+
+       
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="margin_wrap">
+                <div id="logo">
+                    
+                    
+                    <a href="index.html"><img src="logo.png" width="190" alt="로고"></a>
+                </div>
+            <header>
+
+                <nav>
+                <ul>
+                    <li><a href="bestseller.html">Best Seller</a></li>
+                    <li><a href="new.html">New</a></li>
+                    <li><a href="fragnances.html">Fragrances</a></li>
+                    <li><a href="candles.html">Candles</a></li>
+                    <li><a href="bath&body.html">Bath&Body</a></li>
+                    
+                </ul>
+                </nav>
+              
+                  
+                
+            </header>
+        
+        
+           <div class="center"><br><br><br>
+            <video src="./main.mp4" width="1300" autoplay loop muted>
+            <video src="main.webm" type="main/webm">
+            <video src="main.ogg" type="main/ogg">    
+            </video>
+
+             </div>
+            
+     <div class="center">
+
+            <section>
+
+                <br></br><br></br>
+                MOST POPULAR PRODUCTS
+                <br><br><br>
+             
+        
+             <img src="doson.png" width="380">
+             <img src="tamdao.png" width="380">
+             <img src="berries.png" width="380"><br>
+             <img src="lotion.png" width="380">
+             <img src="handcream.png" width="380"><br><br><br>
+
+        </section>
+            
+        </div>
+    </div>
+    
+    <div id="footer">
+        
+        <div id="footer-logo">
+        <p id="padding"><img src="logo2.png" width="110px"></p></div><br><br>
+        <div id="footer a">©copyright; parkyuhyun All Right Reserved &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a href="https://www.instagram.com/uhnzz/">Instagram</a>
+        <a href="https://blog.naver.com/uhnsz/">Blog</a><br><br><br>
+        
+            </div>
+    </div>
+</body>
+</html>
