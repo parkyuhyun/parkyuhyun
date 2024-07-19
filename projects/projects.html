@@ -133,7 +133,6 @@
             #project_name, #project_type, #project_date {
                 display: block;
                 width: 100%;
-                margin-bottom: 5px; /* 요소 간에 약간의 여백 추가 */
             }
 
             #project_blank {
@@ -151,6 +150,10 @@
              width: calc(50% - 10px); /* 화면 너비의 50% 차지 */
              margin-bottom: 10px;
             }
+
+            #project_blank {
+                display: none; /* 모바일에서 숨김 */
+            }
             
         }
 
@@ -160,6 +163,10 @@
             #info {
              width: calc(33.3% - 7px); /* 화면 너비의 50% 차지 */
              margin-bottom: 10px;
+            }
+
+            #project_blank {
+                display: none; /* 모바일에서 숨김 */
             }
             
         }
