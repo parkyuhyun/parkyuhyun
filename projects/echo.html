@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adidas-children's day</title>
+    <title>Echo into Silence</title>
 
     <style>
         body {margin: 10px;
             font-family: pretendard, sans-serif;
             font-size: 12px;
             font-weight: 400;
-            color: black;
+            color: white;
+            background: black;
             letter-spacing: -0.5px;
             line-height: 140%;
             overflow-x: hidden; /* Prevent horizontal scrolling */}
 
         footer {width: 1728px;
-                background-color: white;
+                background-color: black;
                 position: fixed;
                 bottom: 0;
                 margin: 0;
         }
         
         
-        #header {color: black;
+        #header {color: white;
                 text-align: left;
                 display: flex;
                 width: 1728px;
                 height: 35px;}
 
-        #logo {color:black;
+        #logo {color:white;
                 width: 270px;}
 
         #logo a {
-            color: black; /* 텍스트 색상을 흰색에서 검정색으로 변경 */ 
+            color: white; /* 텍스트 색상을 흰색에서 검정색으로 변경 */ 
             text-decoration: none;
             font-size: 12px;
             }
@@ -48,37 +49,37 @@
             width: 120px;}
 
         #nav-site a {
-            color: black;
+            color: white;
             text-decoration: none;
         }
 
 
         #project_basic {
-            color: black;
+            color: white;
             display: flex;
             
         }
 
         #project_name {
-            color: black;
+            color: white;
             width: 270px;
             display: block;
 
         }
 
         #project_name a {
-            color: black;
+            color: white;
             text-decoration: none;
         }
 
         #project_info {
-            color: black;
+            color: white;
             display: flex;
             width: 120px;
         }
 
         #project_date {
-            color: black;
+            color: white;
             display: flex;
             width: 200px;
         }
@@ -192,21 +193,20 @@
 
     <div id="project_basic">
         <div id="project_name">
-            ADIDAS x Children's Day Promotion
+            Echo into Silence
         </div>
 
         <div id="project_info">
-            Brand Promotion <br>
+            Poster
         </div>
         <div id="project_date">
-            June. 2024
+            February. 2026
         </div>
 
         <div id="project_img">
-            <img src="../img/32.png" width="400px">
-            <img src="../img/33.png" width="400px">
-            <img src="../img/34.png" width="400px">
-            <img src="../img/35.png" width="400px">
+            <img src="../img/48.png" width="400px">
+            <img src="../img/49.png" width="400px">
+            
             
         </div>
 
@@ -215,7 +215,20 @@
 
    
 
+<script>
+  function tryPlayAll() {
+    document.querySelectorAll('video.autoplay').forEach(v => {
+      v.muted = true;
+      v.playsInline = true;
+      const p = v.play();
+      if (p) p.catch(() => {});
+    });
+  }
 
+  window.addEventListener('DOMContentLoaded', tryPlayAll);
+  window.addEventListener('touchstart', tryPlayAll, { once: true });
+  window.addEventListener('click', tryPlayAll, { once: true });
+</script>
     
     
 
